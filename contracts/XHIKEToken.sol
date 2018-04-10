@@ -4,7 +4,7 @@ pragma solidity ^0.4.11;
 contract XHIKEToken {
     string public name = "XHIKE";      //  token name
     string public symbol = "XHK";           //  token symbol
-    uint256 public decimals = 6;            //  token digit
+    uint256 public decimals = 18;            //  token digit
 
     mapping (address => uint256) public balanceOf;
     mapping (address => mapping (address => uint256)) public allowance;
@@ -12,7 +12,7 @@ contract XHIKEToken {
     uint256 public totalSupply = 0;
     bool public stopped = false;
 
-    uint256 constant valueFounder = 100000000000000000;
+    uint256 public valueFounder = 58000000 * (10**uint(decimals));
     address owner = 0x0;
 
     modifier isOwner {
