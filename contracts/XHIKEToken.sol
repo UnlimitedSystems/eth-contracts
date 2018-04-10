@@ -1,5 +1,6 @@
 pragma solidity ^0.4.11;
 
+
 contract XHIKEToken {
     string public name = "XHIKE";      //  token name
     string public symbol = "XHK";           //  token symbol
